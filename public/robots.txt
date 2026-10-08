@@ -1,3 +1,2 @@
 User-agent: *
 Disallow:
-Sitemap: nasit.byu.edu/sitemap.xml
