@@ -26,7 +26,10 @@ export type FAQ = {
 
 export type Course = {
   courseNumber: string;
+  department: "CS" | "ECE" | "ME";
+  level: "undergraduate" | "graduate";
   title: string;
   whenOffered: string;
   relationshipToRobotics: string;
+  syllabusUrl?: string;
 };
