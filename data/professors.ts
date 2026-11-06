@@ -15,7 +15,8 @@ export const professors: Professor[] = [
       name: "Jacob Crandall",
       affiliation: "Computer Science",
       image: "/images/professors/Crandall.webp",
-      bio: "Jacob Crandall received the B.S., M.S., and Ph.D. degrees in Computer Science from Brigham Young University, Provo, UT, in 2001, 2004, and 2006, respectively. From 2006 to 2008, he was a Postdoctoral Associate in the Department of Aeronautics and Astronautics at the Massachusetts Institute of Technology (MIT). Prior to returning to BYU as an Associate Professor in 2016, Jacob spent eight immensely satisfying years as a faculty member at the Masdar Institute of Science and Technology, a new graduate-research university in Abu Dhabi, UAE formed in collaboration with MIT.",
+      bio: "Jacob Crandall received the B.S., M.S., and Ph.D. degrees in Computer Science from Brigham Young University, Provo, UT, in 2001, 2004, and 2006, respectively. From 2006 to 2008, he was a Postdoctoral Associate in the Department of Aeronautics and Astronautics at the Massachusetts Institute of Technology (MIT). Prior to returning to BYU in 2016, Jacob spent eight years as a faculty member at the Masdar Institute of Science and Technology, a new graduate-research university in Abu Dhabi, UAE formed in collaboration with MIT.",
+      interests: "Human-Machine Cooperation, Multi-agent Systems, Robot Proficiency Self Assessment, Modeling Human Social Systems, Artificial Intelligence",
       link: "https://cs.byu.edu/directory/jacob-crandall"
     },
     {
