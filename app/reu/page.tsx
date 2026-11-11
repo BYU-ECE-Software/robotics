@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { FiArrowUpRight, FiCalendar, FiCheck, FiDollarSign, FiMapPin } from "react-icons/fi";
 import PageHero from "@/components/PageHero";
-import nextConfig from "@/next.config";
-import ComingSoonPage from "@/components/states/ComingSoonPage";
 
 export const metadata = {
   title: "Robotics Pioneers REU | Robotics at BYU",
   description: "A 10-week summer robotics research experience for undergraduate students at BYU.",
 };
+
+const applicationUrl = "https://etap.nsf.gov/award/8621/opportunity/12233";
 
 const benefits = [
   "$7,000 salary stipend for the 10-week program",
@@ -25,7 +25,7 @@ const applicationItems = [
 ];
 
 const timeline = [
-  ["Early February 2027", "Applications due"],
+  ["January 20, 2027", "Applications due"],
   ["February", "Zoom interviews"],
   ["Late February", "Recommendation letters due"],
   ["Mid-March", "First offers sent"],
@@ -35,7 +35,6 @@ const timeline = [
 
 export default function ReuPage() {
   return (
-    // <ComingSoonPage pageName="REU Info Page"/>
     <>
       <PageHero
         title="Robotics Pioneers REU"
@@ -44,17 +43,15 @@ export default function ReuPage() {
         position="center 45%"
         height="560px"
       >
-        {/* <a
-          href="https://reu.byu.edu"
+        <a
+          href={applicationUrl}
           target="_blank"
           rel="noopener noreferrer"
-          disabled
           className="group inline-flex items-center gap-3 bg-white px-6 py-4 text-sm font-bold text-[#002e5d] transition hover:bg-[#7fbeeb]"
         >
-          Visit the application site
+          Apply now
           <FiArrowUpRight aria-hidden="true" className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </a> */}
-        Applications open soon!
+        </a>
       </PageHero>
 
       <section className="bg-white py-20 sm:py-28">
@@ -85,7 +82,7 @@ export default function ReuPage() {
           <div className="bg-[#f5f7f9] p-7 sm:p-9">
             <FiCalendar aria-hidden="true" className="text-3xl text-[#0047ba]" />
             <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Program dates</p>
-            <p className="mt-2 text-xl font-bold text-[#002e5d]">May – July, 2027</p>
+            <p className="mt-2 text-xl font-bold text-[#002e5d]">May 20 – July 21, 2027</p>
           </div>
           <div className="bg-[#f5f7f9] p-7 sm:p-9">
             <FiDollarSign aria-hidden="true" className="text-3xl text-[#0047ba]" />
@@ -134,7 +131,7 @@ export default function ReuPage() {
             <p className="eyebrow">Application details</p>
             <h2 className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#002e5d] sm:text-4xl">Prepare your application.</h2>
             <p className="mt-5 leading-7 text-slate-600">
-              Applications for the 2027 cohort will be due February 2027. The application includes:
+              Applications for the 2027 cohort are due January 20, 2027. The application includes:
             </p>
             <ul className="mt-7 space-y-4">
               {applicationItems.map((item) => (
@@ -192,8 +189,8 @@ export default function ReuPage() {
         <div className="container-wide">
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#b6dcf6]">Robotics Pioneers</p>
           <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-bold tracking-[-0.035em] sm:text-5xl">Ready to build research experience?</h2>
-          <a href="https://reu.byu.edu" target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex items-center gap-3 bg-white px-7 py-4 text-sm font-bold text-[#002e5d] transition hover:bg-[#7fbeeb]">
-            Visit reu.byu.edu
+          <a href={applicationUrl} target="_blank" rel="noopener noreferrer" className="group mt-8 inline-flex items-center gap-3 bg-white px-7 py-4 text-sm font-bold text-[#002e5d] transition hover:bg-[#7fbeeb]">
+            Apply now
             <FiArrowUpRight aria-hidden="true" className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </a>
         </div>
